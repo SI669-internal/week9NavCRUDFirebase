@@ -3,6 +3,16 @@ import { StyleSheet, Text, View } from 'react-native';
 import { Input, Button } from 'react-native-elements';
 import { getDataModel } from './DataModel';
 
+
+
+
+
+
+
+
+
+
+
 function DetailsScreen({navigation, route}) {
 
   let item = route.params ? route.params.item : null;

@@ -10,9 +10,11 @@ function HomeScreen({navigation}) {
   const [todoList, setTodoList] = useState(dataModel.getTodoListCopy());
 
   useEffect(()=>{
-    dataModel.subscribeToUpdates(()=>{
-      setTodoList(dataModel.getTodoListCopy());
-    });
+    dataModel.subscribeToUpdates(
+      ()=>{
+        setTodoList(dataModel.getTodoListCopy());
+      }
+    );
   }, []);
 
   return (
